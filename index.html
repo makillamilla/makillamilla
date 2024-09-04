@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="software developer, web developer, makayla miller">
+        <meta name="author" content="Makayla Miller">
+        <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="scripts.js"></script>
+        <title>Makayla Miller Portfolio</title>
+    </head>
+
+    <body>
+        <header>
+            <!-- Add nav bar -->
+            <a class="logo"> MakaylaMiller.Dev</a>
+            <div class="navmenu">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a>Resume</a>
+                <a>Contact Me</a>
+            </div>
+        </header>
+
+        <!-- Add main home section -->
+        <div class="home" id="home">
+
+             <!-- Add font awesone icons -->
+             <div class="socials-icon">
+                <h2 id="socials">Social Media</h2>
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://github.com/makillamilla"><span style="color: rgb(255, 174, 0);"><i class="fa-brands fa-github"></i></span></a>
+            </div>
+
+            <!-- Add home-text-->
+            <div class="home-text">
+                <h2>Hello, <span class="waving-emoji">👋</span></h2>
+                <h2>I'm Makayla.</h2>
+                <h3>Web Developer and BS Applied Computing student</h3>
+                <h3>I am a developer based in Madison, WI. I am passionate and dedicated to my work and life-long learning. Check out the rest of this web page to see my resume, projects, and knowledge.</p>
+                <button>Scroll Down<div class="arrow bounce"><i class="fa fa-arrow-down fa-3x" href="#"></i></div></button>
+            </div>
+
+            <!-- Add home img -->
+            <div class="home-img">
+                <img src="images\makayla-img.JPG">
+            </div>
+        </div>
+
+        <div id="about-me">
+            <h2 class="topics">About Me</h2>
+                <p>I am an Applied Computing BS student at the University of Arizona. My predicted graduation is May 2026. Outside of my courses I also take courses on Codecademy to help me prepare to enter the workforce. I have a passion for website creation, small game creation, and I am excited to learn more about databased and how I can use my knowledge in a business setting. Prior to my current major, I have taken several business courses and have held a position of Assistant Manager at a retail store for almost 2 years.</p>
+       </div>
+
+        <h2 class="topics">Skills</h2>
+            <div class="skills">
+                <img src="images\html.png">
+                <img src="images\css.png">
+                <img src="images\javascript.png">
+                <img src="images\python.png">
+            </div>
+        
+        <h2 class="topics" id="projects">Projects
+            <p>Coming Soon!</p>
+        </h2>
+    
+        <footer>
+            <div id="contact-me"><h2>Contact Me<h2>
+                <form id="contact-form" method="POST" action="sendmail.php">
+                    <div class="form-row form-error" style="display:none;"></div>
+                    <div class="form-row">
+                      <label for="contact-form-name">Name:</label>
+                      <input id="contact-form-name" class="form-input" type="text" name="name" required>
+                    </div>
+                    <div class="form-row">
+                      <label for="contact-form-email">Email:</label>
+                      <input id="contact-form-email" class="form-input" type="email" name="email" required>
+                    </div>
+                    <div class="form-row">
+                      <label for="contact-form-message">Message:</label>
+                      <textarea id="contact-form-message" class="form-input" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                  </form>
+            </div>
+        </footer>
+    </body>
+</html>
